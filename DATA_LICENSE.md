@@ -15,9 +15,8 @@ This applies in particular to:
 The source code (`*.py`), the TLA+ module (`*.tla`, `*.cfg`) and the figure
 scripts are released under the **MIT** licence; see `LICENSE`.
 
-The Zenodo record that archives this release uses CC BY 4.0 as a single
-umbrella licence for the whole package, because a Zenodo deposit accepts only
-one record-level licence. The finer-grained split above remains authoritative.
+The split above is authoritative for the whole release: MIT for code, CC BY 4.0
+for data. Both licence notices travel with every copy of the `v1.0.0` tag.
 
-Attribution: please cite the manuscript and the archived release (DOI in
-`CITATION.cff` and in `README.md`).
+Attribution: please cite the manuscript and the `v1.0.0` release; see
+`CITATION.cff` and the repository README.

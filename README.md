@@ -5,26 +5,24 @@ Interoperability across Heterogeneous Blockchain Platforms in E-Government Syste
 
 | | |
 |---|---|
-| Permanent archive | `https://doi.org/10.5281/zenodo.XXXXXXX` (Zenodo, DOI to be inserted before submission) |
-| Development repository | `https://github.com/ywzqwwt/dsal-egov` |
-| Release | `v1.0.0` |
+| Public repository | `https://github.com/ywzqwwt/dsal-egov` |
+| Frozen release | tag `v1.0.0` — `https://github.com/ywzqwwt/dsal-egov/tree/v1.0.0` |
+| Archive download | `https://github.com/ywzqwwt/dsal-egov/archive/refs/tags/v1.0.0.zip` |
 | Code licence | MIT (`LICENSE`) |
 | Data licence | CC BY 4.0 (`DATA_LICENSE.md`) |
 | Dependencies | `requirements.txt` (Python 3.10+) |
 
-> **TODO before submission:** obtain the Zenodo DOI and run `finalize_doi.py`
-> (see the submission checklist) so that the DOI in this table, in `CITATION.cff`,
-> in the manuscript's Code Availability statement, in the cover letter and in
-> `Supplementary_Material_DSAL.pdf` all agree. Add all manuscript co-authors to
-> `CITATION.cff` and `.zenodo.json`. Then delete this TODO block.
+> **TODO before submission:** add all manuscript co-authors to `CITATION.cff`
+> and to the Title Page. Then delete this TODO block.
 
 This package contains the artifacts for the manuscript. Everything here is
 synthetic, computational, or derived from public documentation. No agency data, no
 employer material, and no person-level data are included.
 
-The complete, versioned artefact set is hosted at the repository and archived at
-the DOI above rather than attached to the journal's submission system, so that
-reviewers and readers always obtain the exact directory layout the scripts expect.
+The complete, versioned artefact set is hosted at the public repository above and
+frozen at the `v1.0.0` tag rather than attached to the journal's submission system,
+so that reviewers and readers always obtain the exact directory layout the scripts
+expect. The `main` branch may receive subsequent revisions; the tag does not change.
 
 ## Contents
 

@@ -5,8 +5,8 @@ version: 1.0.0
 date-released: 2026-11-08
 type: software
 license: MIT
-doi: "10.5281/zenodo.XXXXXXX"
 repository-code: "https://github.com/ywzqwwt/dsal-egov"
+url: "https://github.com/ywzqwwt/dsal-egov/tree/v1.0.0"
 abstract: >-
   Synthetic DSAL-Egov Concept Benchmark v1 (5,400 concept-mapping pairs over
   Hyperledger Fabric, FISCO BCOS and Corda), a deterministic benchmark
