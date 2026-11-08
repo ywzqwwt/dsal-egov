@@ -18,5 +18,4 @@ scripts are released under the **MIT** licence; see `LICENSE`.
 The split above is authoritative for the whole release: MIT for code, CC BY 4.0
 for data. Both licence notices travel with every copy of the `v1.0.0` tag.
 
-Attribution: please cite the manuscript and the `v1.0.0` release; see
-`CITATION.cff` and the repository README.
+Attribution: please cite the manuscript and the `v1.0.0` release.

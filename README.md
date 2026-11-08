@@ -12,9 +12,6 @@ Interoperability across Heterogeneous Blockchain Platforms in E-Government Syste
 | Data licence | CC BY 4.0 (`DATA_LICENSE.md`) |
 | Dependencies | `requirements.txt` (Python 3.10+) |
 
-> **TODO before submission:** add all manuscript co-authors to `CITATION.cff`
-> and to the Title Page. Then delete this TODO block.
-
 This package contains the artifacts for the manuscript. Everything here is
 synthetic, computational, or derived from public documentation. No agency data, no
 employer material, and no person-level data are included.
