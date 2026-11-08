@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or code, please cite the manuscript and this archived release."
+title: "DSAL-Egov: reproducibility package for a domain-specific abstraction layer for cross-chain e-government interoperability"
+version: 1.0.0
+date-released: 2026-11-08
+type: software
+license: MIT
+doi: "10.5281/zenodo.XXXXXXX"
+repository-code: "https://github.com/ywzqwwt/dsal-egov"
+abstract: >-
+  Synthetic DSAL-Egov Concept Benchmark v1 (5,400 concept-mapping pairs over
+  Hyperledger Fabric, FISCO BCOS and Corda), a deterministic benchmark
+  generator, the two-stage retrieval-and-reranking reference implementation,
+  the evaluation harness and recorded results, the manuscript figure scripts,
+  and the TLA+ coordination model with its TLC model-checking log. All content
+  is synthetic or derived from public platform documentation; no agency,
+  employer or person-level data are included.
+authors:
+  - family-names: Wu
+    given-names: Wentao
+    affiliation: "Faculty of Computing, Universiti Teknologi Malaysia"
+    email: wuwentao@graduate.utm.my
+  # TODO: add the remaining manuscript co-authors before release.
+keywords:
+  - blockchain interoperability
+  - e-government
+  - domain-specific abstraction layer
+  - concept mapping
+  - TLA+
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "A Domain-Specific Abstraction Layer for Interoperability across Heterogeneous Blockchain Platforms in E-Government Systems"
+  authors:
+    - family-names: Wu
+      given-names: Wentao
+  # TODO: complete the author list, journal, volume, pages and DOI after acceptance.
+  year: 2026

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Large local scratch outputs. The released results under
+# evaluation/results/ are intentionally tracked and must stay in the archive.
+/tmp/
+*.log

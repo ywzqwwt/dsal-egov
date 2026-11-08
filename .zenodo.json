@@ -1,0 +1,24 @@
+{
+  "title": "DSAL-Egov: reproducibility package for a domain-specific abstraction layer for cross-chain e-government interoperability",
+  "description": "Synthetic DSAL-Egov Concept Benchmark v1 (5,400 pairs across Hyperledger Fabric, FISCO BCOS and Corda) with a deterministic generator, the two-stage retrieval-and-reranking reference implementation, the evaluation harness and recorded results, the manuscript figure scripts, and the TLA+ coordination model with its TLC model-checking log. Supplementary material to the manuscript 'A Domain-Specific Abstraction Layer for Interoperability across Heterogeneous Blockchain Platforms in E-Government Systems'. All content is synthetic or derived from public platform documentation; no agency, employer or person-level data are included. Code is MIT-licensed and data are CC BY 4.0; the Zenodo record uses CC BY 4.0 as the umbrella licence for the package.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "version": "1.0.0",
+  "publication_date": "2026-11-08",
+  "keywords": [
+    "blockchain interoperability",
+    "e-government",
+    "domain-specific abstraction layer",
+    "concept mapping",
+    "TLA+",
+    "reproducibility"
+  ],
+  "creators": [
+    {
+      "name": "Wu, Wentao",
+      "affiliation": "Faculty of Computing, Universiti Teknologi Malaysia"
+    }
+  ],
+  "notes": "TODO before publishing the Zenodo release: add the remaining manuscript co-authors and, if any, their ORCIDs; add the manuscript DOI under related identifiers after acceptance."
+}

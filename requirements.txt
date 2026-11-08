@@ -1,0 +1,15 @@
+# DSAL-Egov reproducibility package -- Python dependencies
+# Tested with Python 3.10+.
+#
+#   python -m pip install -r requirements.txt
+#
+# benchmark/generate_benchmark.py and evaluation/evaluate_baselines.py use
+# only the Python standard library and need none of the packages below.
+
+# Two-stage pipeline and recorded evaluation results
+numpy>=1.24,<3
+scikit-learn>=1.3
+torch>=2.0
+
+# Figure generation (figures/*.py)
+matplotlib>=3.7

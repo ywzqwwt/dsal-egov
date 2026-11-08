@@ -1,0 +1,73 @@
+concept_id,family,dsal_term,platform,platform_term,documented_gloss
+C01,isolation,Isolation Domain,fabric,Channel,a private ledger partition shared by a subset of member organisations
+C01,isolation,Isolation Domain,bcos,Group,an independent ledger group with its own consensus and storage
+C01,isolation,Isolation Domain,corda,Business Network,a governed set of nodes that share states under a common set of rules
+C02,isolation,Membership Set,fabric,Channel Membership,the consortium members whose certificates are recognised on a channel
+C02,isolation,Membership Set,bcos,Group Member List,the agencies registered as members of one group
+C02,isolation,Membership Set,corda,Network Participants,the parties that hold identities on a Corda network
+C03,isolation,Private Data Scope,fabric,Private Data Collection,a side database that shares selected key values with named organisations only
+C03,isolation,Private Data Scope,bcos,Group Storage Isolation,separate storage that keeps one group's records away from other groups
+C03,isolation,Private Data Scope,corda,Confidential State,a state that is distributed only to the parties named in the transaction
+C04,identity,Organisation Identity,fabric,Membership Service Provider,the component that issues and validates the certificates that define an organisation
+C04,identity,Organisation Identity,bcos,Agency Account,the on-chain account that represents a participating institution
+C04,identity,Organisation Identity,corda,Organisation Identity,the certificate-backed identity of a legal entity on the network
+C05,identity,Certificate Authority,fabric,Fabric CA,the certificate authority that enrols identities and issues enrolment certificates
+C05,identity,Certificate Authority,bcos,CA Node,the certificate node that issues institution certificates for the chain
+C05,identity,Certificate Authority,corda,Identity Manager,the service that issues and manages participant identity certificates
+C06,identity,Role Binding,fabric,Attribute-Based Access,attributes embedded in an identity certificate that gate chaincode functions
+C06,identity,Role Binding,bcos,Role Table,a table that binds roles to permitted contract methods
+C06,identity,Role Binding,corda,Party Role,a role attribute attached to a party that constrains flow participation
+C07,consensus,Ordering Service,fabric,Orderer,the node that orders transactions and assembles them into blocks
+C07,consensus,Ordering Service,bcos,Consensus Node,the node that reaches agreement on block order under PBFT
+C07,consensus,Ordering Service,corda,Notary,the service that prevents double spending by signing unique input states
+C08,consensus,Finality Point,fabric,Block Commit,the point at which a block is validated and written to the peer ledger
+C08,consensus,Finality Point,bcos,PBFT Commit,the phase in which a block is finalised by a supermajority of consensus nodes
+C08,consensus,Finality Point,corda,Notarised Transaction,a transaction whose inputs have been signed off by the notary
+C09,consensus,Block Proposal,fabric,Block,an ordered batch of transactions delivered to peers for validation
+C09,consensus,Block Proposal,bcos,Block,a sealed batch of transactions produced by the consensus round
+C09,consensus,Block Proposal,corda,Transaction,an atomic proposal that consumes input states and produces output states
+C10,contract,Contract Package,fabric,Chaincode,a program installed and instantiated on a channel to implement business logic
+C10,contract,Contract Package,bcos,Solidity Contract,a contract compiled to bytecode and deployed to a group
+C10,contract,Contract Package,corda,CorDapp,a distributed application packaged as a set of contracts and flows
+C11,contract,Contract Lifecycle,fabric,Chaincode Lifecycle,"the install, approve, commit sequence defined by the Fabric lifecycle"
+C11,contract,Contract Lifecycle,bcos,Contract Deployment,the transaction that publishes contract bytecode to a group
+C11,contract,Contract Lifecycle,corda,Contract Attachment,the process of attaching contract code to a transaction for verification
+C12,contract,Contract Upgrade,fabric,Chaincode Upgrade,re-instantiation of a chaincode definition at a higher version
+C12,contract,Contract Upgrade,bcos,Contract Upgrade,the administrative transaction that points a contract address at new bytecode
+C12,contract,Contract Upgrade,corda,Contract Constraint Upgrade,the replacement of a contract constraint by a ratified new version
+C13,policy,Endorsement Policy,fabric,Endorsement Policy,the policy that specifies which organisations must endorse a proposal
+C13,policy,Endorsement Policy,bcos,Permission Contract,the precompiled contract that checks whether a caller holds the required permission
+C13,policy,Endorsement Policy,corda,Contract Constraint,the constraint that determines which contract code must verify a transaction
+C14,policy,Access Rule,fabric,Access Control List,the list that maps channel resources to the identities allowed to use them
+C14,policy,Access Rule,bcos,Permission Table,the table that records which accounts may call which contract methods
+C14,policy,Access Rule,corda,Flow Permission,the permission that determines whether a party may initiate a flow
+C15,policy,Approval Threshold,fabric,M-of-N Endorsement,a policy requiring m of n listed organisations to endorse
+C15,policy,Approval Threshold,bcos,Multi-signature Rule,a rule that requires several account signatures before execution
+C15,policy,Approval Threshold,corda,Required Signers,the signer set that a transaction must carry to satisfy its contract
+C16,workflow,Business Flow,fabric,Invocation Sequence,the ordered sequence of chaincode invocations that implements a process
+C16,workflow,Business Flow,bcos,Transaction Sequence,the ordered set of contract calls that advances a business process
+C16,workflow,Business Flow,corda,Flow,a program that coordinates the steps of a multi-party business process
+C17,workflow,Approval Step,fabric,Endorsement Round,one collection round in which peers simulate and endorse a proposal
+C17,workflow,Approval Step,bcos,Approval Transaction,the transaction that records one agency's approval decision
+C17,workflow,Approval Step,corda,SubFlow,a nested flow that performs one stage of a larger process
+C18,workflow,Compensation Action,fabric,Reverse Transaction,a compensating invocation that restores a previously committed key value
+C18,workflow,Compensation Action,bcos,Rollback Transaction,a contract call that writes back the prior state after a partial failure
+C18,workflow,Compensation Action,corda,Compensation,a flow that issues offsetting states for an already consumed state
+C19,workflow,Timeout Handler,fabric,Endorsement Timeout,the client-side deadline after which an endorsement request is abandoned
+C19,workflow,Timeout Handler,bcos,Transaction Expiry,the block-height or time bound after which a transaction is rejected
+C19,workflow,Timeout Handler,corda,Flow Timeout,the deadline after which a suspended flow is aborted
+C20,audit,Audit Record,fabric,Transaction Log,the ledger record of validated transactions retained by each peer
+C20,audit,Audit Record,bcos,Block Receipt,the receipt that records a transaction's status and block position
+C20,audit,Audit Record,corda,Vault Audit,the recorded history of state consumption and production in the vault
+C21,audit,Operation Credential,fabric,Signed Proposal Response,the endorsed response signed by each endorsing peer
+C21,audit,Operation Credential,bcos,Transaction Receipt,the signed receipt returned after a contract call is mined
+C21,audit,Operation Credential,corda,Signed Transaction,the notarised transaction carrying all required signatures
+C22,audit,Event Subscription,fabric,Chaincode Event,an event emitted by chaincode and delivered to registered listeners
+C22,audit,Event Subscription,bcos,Event Log,the log topic that clients watch for contract-emitted events
+C22,audit,Event Subscription,corda,Observer,a node that receives updates for states it is not a participant of
+C23,data,World State,fabric,State Database,the key-value database that holds the latest world state for a channel
+C23,data,World State,bcos,State Trie,the Merkle Patricia trie that stores current account and contract state
+C23,data,World State,corda,Vault,the local database that stores the states a party is aware of
+C24,data,Historical Query,fabric,History Database,the index that returns the modification history of a key
+C24,data,Historical Query,bcos,Archive Node Query,a query served by an archive node over historic blocks
+C24,data,Historical Query,corda,Vault Query,a query over recorded states including consumed ones

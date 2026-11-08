@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "generated_with": "generate_benchmark.py",
+  "seed": 20261105,
+  "seed_concept_count": 24,
+  "platforms": {
+    "fabric": "Hyperledger Fabric",
+    "bcos": "FISCO BCOS",
+    "corda": "Corda"
+  },
+  "pairs": 5400,
+  "variants_per_concept_platform": 75,
+  "families": {
+    "isolation": 3,
+    "identity": 3,
+    "consensus": 3,
+    "contract": 3,
+    "policy": 3,
+    "workflow": 4,
+    "audit": 3,
+    "data": 2
+  },
+  "split_counts": {
+    "train": 3744,
+    "val": 792,
+    "test": 864
+  },
+  "candidate_pool_size": 24,
+  "distinct_descriptions": 5400,
+  "test_train_overlap": 0,
+  "note": "Fully synthetic: every description is produced from the embedded concept table by the released script, sampled without replacement so that no two pairs share a description and no test description occurs in training. Gold labels are exact by construction. The corpus contains no material from any employer, agency or third party."
+}
